@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+/*Author: Ma. Angelica Santiago
+Date: February 15, 2023
+Description: WEBD1000 e-portfolio
+*/
+
+/* Responsive layout */
+
+  /* ===============================
+       Mobile Styles: 0px to 640px 
+     ===============================
+*/
+
+  @media screen and (max-width: 640px) {
+
+    /*-------------HOME------------ */
+    nav ul {
+      position: fixed;
+      top: 80px;
+      left: -100%;/* hides the menu bar */
+      background: #111; 
+      height: 100vh;
+      width: 100%;
+      display: block;
+      text-align: center;
+      transition: all 0.5s ease; /* makes the menu bar transition smooth when box is checked */
+      z-index: 1; /* to overlap any div I have so my menu bar will work */
+    }
+
+    #click:checked ~ ul{ /* activates the menu bar when box is checked*/
+      left: 0%;
+    }
+
+    nav ul li {
+      margin: 40px 0;    
+    }
+    
+    nav ul li a{
+      font-size: 20px;
+      display: block;
+    } 
+
+    nav ul li a:hover{
+    background: none;
+    color: cyan;
+    }
+
+    nav .menu-btn i{
+      display: block;
+    }
+
+    #click:checked ~ .menu-btn i:before {
+      content: "\f00d"; /* displays x instead of bars when menu is clicked */
+    }
+      
+    /*-------------CONTACT------------ */
+
+    .container-contact{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+      margin-top: 70px;
+    }
+    .container-contact .content-contact .right-side{
+     width: 90%;
+     margin-left: 5px;
+    }
+
+    .container-contact .content-contact{
+      flex-direction: column-reverse;
+    }
+  .container-contact .content-contact .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    .container-contact .content-contact .left-side::before{
+      display: none;
+    }
+    .container-contact .content-contact .right-side{
+      width: 100%;
+      margin-left: 0;
+    }
+    /*-------------RESUME------------ */
+    .resume-details,.left
+    {
+      float:none;
+      position:relative !important;
+      width:100%;
+      min-height:500px;
+    }
+
+    .personal-details p{      
+      font-size:1em;
+           
+    }
+    /*-------------MENU------------ */
+    .background {
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+     }
+
+     .content{  
+      padding-top: 100px;
+      margin-left: 25px;      
+    }
+
+     /*-------------SKILLS------------ */
+      .skills {        
+        /* overflow-x: hidden; */
+        max-width: 360px; 
+        height: 100vh;
+       }
+
+       .skills-container h1 {
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        
+       }
+
+      .skills-wrapper{
+        padding-top: 200px;
+        display: flex;
+        justify-content: center;        
+        margin: 0 auto 5px 5px; /* 5px prevented the overflow-x*/
+        padding-left: 0;
+      }
+     
+      .skills-container {            
+          width: 100%;
+          margin-top: 10px;
+          justify-content: space-between;
+          padding-bottom: 50px;                 
+      }
+      .percent {
+        text-align: right;
+      }     
+                  
+    .tech-skills {
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+
+    .bar{
+      width: 100%;
+      margin: 5px auto;
+      
+    }
+    .skill-details {
+      position: relative;
+      top: 10px;
+      padding: 5px;
+      margin-right: 5%;      
+       
+    }
+
+    .skill-details span {
+      font-size: 22px;
+      width: 65%;
+      margin-bottom: 5px;
+      margin-right: 0;
+      position: relative;
+      top: 10px;
+      
+    }
+
+  
+
+  }   
+    
+  /* 
+  ==============================================
+   Tablet and Desktop Styles: greater than 640px
+  ==============================================
+*/
+  @media screen and (min-width: 641px) {
+
+    /*-------------MENU------------ */
+    .background { /* sets the width and height for the background to cover the whole page */
+      background-size: cover;
+      height: 100vh;
+      width: 100vw;
+     }  
+}
+
+/* 
+  ==============================================
+   Desktop: 1024px wide
+  ==============================================
+*/
+
+@media screen and (min-width: 1024px) {
+
+   /*-------------RESUME------------ */
+
+  .personal-details h1 {
+    font-size:2.5em;
+    text-align:center;
+  }
+
+  .personal-details p {
+    color:rgba(0,0,0,.75);
+    font-size:1.2em;
+    line-height:1.5;
+    /* margin:0 8px 0 0; */
+    text-align:center;
+  }
+
+  .resume-details {
+    margin:0 auto;
+    max-width:975px;
+    padding:50px 50px 0px 0px;
+    
+  }
+
+  /*-------------GOALS------------ */
+
+  .goals-detail {
+    padding-top: 100px;
+    width: 95%;
+    text-align: justify;
+    max-width: 100%;
+    margin-right: 50px;
+    
+  }
+
+  .goals-detail .center{
+    font-size: 5vw;   
+    
+  }
+
+  .goals-detail .g-details p{
+    font-size: 2vw;
+    line-height: 1.5;
+    
+  }
+
+}

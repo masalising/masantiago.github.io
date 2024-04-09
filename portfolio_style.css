@@ -1,0 +1,530 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/*Author: Ma. Angelica Santiago
+Date: February 1, 2023
+Description: WEBD1000 e-portfolio
+*/
+
+/* ----------Index Style---------- */
+
+.background{ 
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imgs/Blog-Banner-1-3.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.linkedin a{
+    text-decoration: none;
+}
+
+.linkedin a:hover{
+    background: transparent;
+    font-weight: bolder;
+    color: skyblue;
+}
+
+.amazing a{
+    color: skyblue;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.amazing a:hover {
+    box-shadow: inset 200px 0 0 0 #54b3d6; /* making the highlight cover the whole word */
+    color: white;
+  }
+
+.content{  
+  padding-top: 200px;
+  padding-left: 8%;
+  padding-right: 8%;  
+   color: #fff;
+}
+.content h2{
+    font-size: 60px;
+}
+
+.content p{
+    margin-top: 20px;
+    line-height: 25px;
+}
+
+.link{
+    margin-top: 50px;
+    padding-left: 8%;
+}
+.hire{
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    padding: 9px 25px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.link .hire:hover{
+    background: skyblue;
+    border: 1px solid #fff;
+    /* color: #fff; */
+    transition: 0.5s;
+}
+
+
+
+/* -----------Contact style----------- */
+.contact{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: #c8e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contact{
+    width: 500px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container-contact .content-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* to center the media buttons relative to the form */
+}
+
+.media-buttons {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.media-buttons i{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.media-buttons .link {
+  padding-left: 0%; /* to center the icons of media buttons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #4070f4;
+  text-decoration: none;
+}
+
+.container-contact .content-contact .right-side{
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content-contact .right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+
+.right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input, .right-side .input-box .input-box {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box{
+    min-height: 110px;
+    
+}
+
+.right-side .input-box textarea{
+    padding-top: 6px;
+}
+
+.right-side .button{
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="button"]{
+    color: black;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;    
+    background-color: bisque;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover{
+  background: skyblue;
+  color: white;
+  font-weight: 1000;
+}
+
+/* -----------Resume style----------- */
+
+.resume h1 {
+  color: rgba(0,0,0,.75);
+}
+
+.wrapper-resume {
+  height: 100%;  
+}
+
+.left {
+  padding-top: 90px; /* menu won't cover the top part of resume */
+  background-color:#c8e8e9;
+	border-right:1px solid rgba(0,0,0,.05);
+	float:right;
+	height:100%;
+	margin-left:-1px;
+	min-width:256px;
+	position:fixed; /* move the personal details to left */
+	width:33.33%;
+}
+
+.resume-details {
+  float:right;
+	height:100%;
+	position:relative;
+	width:66.66%;
+}
+
+.personal-details {
+  background:rgba(0,0,0,.001);
+	bottom:0;
+	height:100px; /* to center the name and address */
+	left:0;
+	margin:auto;
+	position:absolute;
+	right:0;
+	top:0;
+	width:85%;
+}
+
+.personal-details h1 {
+  font-size:1.5em;
+	text-align:center;
+}
+
+.personal-details h1 em {
+  color:rgba(0, 0, 0, 0.35);
+	font-style:normal;
+	font-weight:700;
+}
+
+.personal-details p {
+  color:rgba(0,0,0,.75);
+	font-size:.75em;
+	line-height:1.5;
+	margin:0 8px 0 0;
+	text-align:center;
+}
+
+.personal-details .name {
+  margin:0 auto;
+	width:85%;
+}
+
+.resume-details {
+  margin:0 auto;
+	max-width:975px;
+	padding:3em;
+  padding-top: 50px; /* menu won't cover the top part of resume */
+  text-align: justify;
+}
+
+.resume-details h2 {
+  font-size:1.75em;
+}
+
+.resume-details p {
+  color:rgba(0,0,0,.5);
+}
+
+.resume-details p em{
+  color:rgba(0,0,0,1);
+	font-style:normal;
+}
+
+.resume-details section{
+  margin:50px auto;
+}
+
+.skill li:hover {
+  background: #c8e8e9;
+  color: #000;
+  font-weight: 1000;
+}
+
+.skill{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type:none;
+	margin-top:-10px;
+	max-width:570px;
+	padding:0;
+}
+
+.resume-details h3 {
+  padding: 10px 0 20px 0;
+}
+
+.skill li{
+  flex: auto;
+  background:rgba(0,0,0,.75);
+	border-radius:5px;
+	color:#FFF;
+	display:inline-block;
+	list-style:none;
+	margin:15px 15px 0 0;
+	padding:10px;
+	text-align:center;
+}
+
+/* -----------Goals----------- */
+
+.goals {
+  
+  color: black;
+  margin: 0;
+}
+
+.goals-detail {
+  padding-top: 100px;
+  width: 95%;
+  max-width: 1220px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.goals-detail p {
+  margin: 0 0 13px 0;  
+}
+
+.goals-detail p {
+  margin: 0 0 13px 0;
+}
+
+.goal-grid{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.goals-detail .center {
+  text-align: center;
+  
+}
+
+.goals-detail .g1 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+}
+
+.goals-detail .g1-number {
+  font-size: 8vw;
+  font-weight: 600;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  height: calc(10vw + 20px);
+  transition: all 0.2s ease-in;
+}
+
+.goals-detail .g-content {
+  border-top: 2px solid #fff;
+  display: grid;
+  /* grid-template-columns: 1fr 4fr; */
+  padding: 15px 0;
+}
+
+.g-content .g-details {
+  line-height: 26px;
+}
+.g1-number {
+  background: #c8e8e9;
+}
+
+/* -----------Skills----------- */
+.skills{
+  background: #c8e8e9;
+}
+
+.skills-wrapper {
+  width: 90%;  /* Reduce width for smaller screens */
+  max-width: 800px; /* Add a max-width to prevent overflowing */
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  
+}
+
+.skills-container {
+  width: 100%;
+  padding: 30px 30px 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+
+.skills-container * {
+  color: #000;
+  font-weight: 500;
+}
+
+.skills-container h1 {
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.skill-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.skill-details span {
+  font-size: 20px;
+}
+
+.bar {
+  position: relative;
+  border: 2px solid #0d96e0;
+  border-radius: 20px;
+}
+
+.bar div {
+  position: relative;
+  width: 0;
+  height: 10px; /* bar height */
+  border-radius: 10px;
+  background-color: #0d96e0;
+}
+
+.tech-skills:not(:last-child) {
+  margin-bottom: 30px; /* gap between skills */
+}
+
+/* ------animation bar---------- */
+#html-bar {
+  animation: html-fill 2s forwards;
+}
+@keyframes html-fill {
+  100% {
+    width: 70%;
+  }
+}
+
+#css-bar {
+  animation: css-fill 2s forwards;
+}
+@keyframes css-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#sql-bar {
+  animation: sql-fill 2s forwards;
+}
+@keyframes sql-fill {
+  100% {
+    width: 50%;
+  }
+}
+
+#java-bar {
+  animation: java-fill 2s forwards;
+}
+@keyframes java-fill {
+  100% {
+    width: 30%;
+  }
+}
+
+#python-bar {
+  animation: python-fill 2s forwards;
+}
+@keyframes python-fill {
+  100% {
+    width: 60%;
+  }
+}
+/* ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
